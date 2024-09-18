@@ -1,0 +1,41 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . . . . . . . . ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". A A A . B B B B B B ."
+    ". . . . . . . . . . . .";
+}
+
+.item1 {
+  grid-area: A;
+}
+
+.item {
+  grid-area: B;
+}
+
+
